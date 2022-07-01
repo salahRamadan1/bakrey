@@ -1,0 +1,353 @@
+body {
+  color: black;
+  margin: 0%;
+  padding: 0%;
+  transition: all 1s;
+  
+}
+ 
+ 
+#demo {
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+.colorSetting{
+  background-color: gray;
+}
+#clickMood{
+  cursor: pointer;
+}
+.mood{
+  display: none;
+
+  transition: all 1s;
+  background-color: gray;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 10000000000000000000000000;
+}
+#light , #dark{
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.navbar {
+ background-color:#8e7754 ;
+  transition: 1s;
+  display: none;
+}
+#iconNav{
+  background-color: white !important;
+}
+a {
+  transition: all 1s;
+}
+.nav-link {
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 0, 0.584);
+}
+#settingParent {
+  /* background-color: aqua; */
+  opacity: 0;
+  transition: all 1s;
+  float: right;
+  position: fixed;
+  left: 0px;
+  top: 30%;
+  z-index: 3000000000000000000;
+}
+
+ 
+.colorDiv {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+ 
+/* endNav */
+#homeOne {
+  background-image: url(../img/drew-coffman-1872.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+}
+#homeOne h5::after{
+  content: "F a m i l y   B a k e r y|";
+  animation: typing 2s linear 1s infinite alternate;
+}
+@keyframes typing {
+  0% {
+      content: "F a|";
+  }
+
+  10% {
+      content: "F a m|";
+  }
+
+  20% {
+      content: " F a m l |";
+  }
+
+  30% {
+      content: " F a m l y |";
+  }
+
+  40% {
+      content: " F a m i l y |";
+  }
+
+  50% {
+      content: " F a m i l y  b a|";
+  }
+
+  60% {
+      content: " F a m i l y b a k|";
+  }
+
+  70% {
+      content: " F a m i l y b a k e|";
+  }
+
+  80% {
+      content: " F a m i l y b a k e r|";
+  }
+
+  90% {
+      content: " F a m i l y b a k e r y  |";
+  }
+
+  100% {
+      content: " F a m i l y b a k e r y  |";
+  }
+}
+.learn {
+  color: white;
+  background-color: #8e7754;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.learn:hover {
+  color: black;
+  background-color: white;
+}
+.us {
+  color: white;
+  background-color: transparent;
+  padding: 15px 20px;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+.us:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.5s;
+}
+.brd {
+  width: 40px;
+  height: 60px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.brd::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #ffff;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  animation: move 1s infinite;
+}
+@keyframes move {
+  0% {
+    top: 5%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 80%;
+    opacity: 0;
+  }
+}
+/* endHomeOne */
+
+#homeTwo {
+  transition: all 0.5s;
+  opacity: 0;
+ 
+}
+.iconeHome {
+  padding: 10px;
+  color: #8e7754;
+  font-size: 15px;
+  border: #8e7754 solid 2px;
+  border-radius: 50px;
+}
+/* endHomeTwo */
+#three {
+  background-color: #f8f8f8;
+  opacity: 0;
+  transition: all 1s;
+}
+/* endHomeThree */
+.mAbout {
+  margin-left: 5000px;
+  overflow-x: hidden;
+  transition: all 1s;
+}
+#aboutTwo {
+  background-color: #f8f8f8;
+}
+/* endAboutThree */
+.AboutTwo {
+  background-color: #8e7754;
+}
+/* emdAbout */
+.our {
+  background-image: url(../img/drew-coffman-1872.jpg);
+  height: 25vh;
+  background-position: bottom;
+}
+.items {
+  border-bottom: 1px gray solid;
+}
+/* endOur */
+.GalleryOne {
+  background-color: #f8f8f8;
+}
+.images {
+  height: 80%;
+
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+.scale .GalleryTwoPos {
+  cursor: pointer;
+}
+.GalleryTwoPos {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.images:hover .GalleryTwoPos {
+  opacity: 1;
+}
+
+.boxParent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.boxTitle {
+  background-image: url(../img/roman-kraft-56589-800x760.jpg);
+  width: 50%;
+  height: 75%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 2rem;
+  position: relative;
+}
+.images {
+  cursor: pointer;
+}
+#prev,
+#next {
+  cursor: pointer;
+}
+#closed {
+  position: absolute;
+  top: 0.5%;
+  right: 0.2%;
+  cursor: pointer;
+  color: #8e7754;
+}
+/* endGallarey */
+.btn {
+  padding: 10px 10px;
+  background-color: #8e7754;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: darkgray;
+  color: white;
+}
+.iconeCon {
+  background-color: #8e7754;
+  padding: 10px;
+  border-radius: 50px;
+}
+/* endContact */
+.footerOne {
+  color: white;
+  background-color: #403d38;
+}
+.footerTwo {
+  background-color: #353330;
+}
+
+.iconeFooter {
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #403d38;
+  border-radius: 50%;
+  border: solid 2px;
+  transition: all 1s;
+}
+.iconeFooter:hover {
+  color: white;
+  background-color: rgb(34, 0, 255);
+}
+
+.fa-google-plus-g:hover {
+  background-color: red;
+}
+/* EndFooterOne */
+/* upPad */
+.iconUpPadge{
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  background-color: #8e7754;
+  color: white;
+  padding: 10px;
+  border-radius: 100% 100%;
+  transition: all 0.5s;
+}
+.iconUpPadge:hover{
+  color: black;
+  background-color: grey;
+}
